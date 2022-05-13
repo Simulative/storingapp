@@ -7,6 +7,7 @@
 </head>
 
 <body>
+<input type="hidden" name="action" value="create">
 
     <?php require_once '../header.php'; ?>
 
@@ -20,12 +21,24 @@
                 <input type="text" name="attractie" id="attractie" class="form-input">
             </div>
             <div class="form-group">
-                <label for="type">Type</label>
-                <!-- hier komt een dropdown -->
+                <label for="type">Type:</label>
+                <select name="type" id="type">
+                    <option value="achtbaan">Achtbaan</option>
+                    <option value="draaiend">Draaiend</option>
+                    <option value="kinder">Kinder</option>
+                    <option value="horeca">Horeca</option>
+                    <option value="show">Show</option>
+                    <option value="water">Water</option>
+                    <option value="overig">Overig</option>
+                </select>
             </div>
             <div class="form-group">
                 <label for="capaciteit">Capaciteit p/uur:</label>
                 <input type="number" min="0" name="capaciteit" id="capaciteit" class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="prioriteit">Prio:</label>
+                <input type="checkbox" name="prioriteit">
             </div>
             <div class="form-group">
                 <label for="melder">Naam melder:</label>

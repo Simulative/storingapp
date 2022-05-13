@@ -10,9 +10,9 @@
 
     <?php require_once 'header.php'; ?>
     
-    <div class="container home">
+    <div class="container">
 
-        <h1>Welkom bij de technische dienst</h1>
+        <h1>Meldingen</h1>
         <img src="img/logo-big-fill-only.png" alt="logo">
 
     </div>
