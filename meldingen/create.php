@@ -7,7 +7,7 @@
 </head>
 
 <body>
-<input type="hidden" name="action" value="create">
+
 
     <?php require_once '../header.php'; ?>
 
@@ -15,6 +15,7 @@
         <h1>Nieuwe melding</h1>
 
         <form action="../backend/meldingenController.php" method="POST">
+        <input type="hidden" name="action" value="create">
         
             <div class="form-group">
                 <label for="attractie">Naam attractie:</label>

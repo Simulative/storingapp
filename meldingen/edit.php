@@ -25,10 +25,8 @@
         <?php
           $query = "SELECT * FROM meldingen WHERE id = :id";
           $statement = $conn->prepare($query);
-        //4. Voer de query uit, voeg hier nog de placeholder toe
-        $statement->execute([":id => $id"]);
-        //5. Ophalen gegevens, tip: gebruik hier fetch().
-        $melding = $statement->fetch($id);
+          $statement->execute([":id" => $id]);
+          $melding = $statement->fetch(PDO::FETCH_ASSOC);
         ?>
 
         <form action="../backend/meldingenController.php" method="POST">
